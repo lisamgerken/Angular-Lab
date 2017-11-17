@@ -11,26 +11,20 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="container" ng-controller="FormController as form">
-		<div class="formDiv">
-			<div class="icon">
+
+	<task-form></task-form>
+
+		<!-- 	<div class="icon">
 				<i class="material-icons">arrow_back</i>
 			</div>
-			<p class="go">Go back</p>
-			<h1>TODO List</h1>
-			<p class="description">A place to store the things you have to do!</p> 
-			<input class="filter" type="text" placeholder="Filter your to-dos" ng-model="listFilter">
-			<ol>
-				<li ng-repeat="item in form.list | filter: listFilter track by $index"> {{ item }} <a ng-click="form.removeItem($index)" href=""><div class="iconClear"><i class="material-icons">clear</i></div></a></li>
-			</ol>
-			<input class="addStuff" type="text" placeholder="Add your to-do" ng-model="form.addItem">
-			<button ng-click="form.addList(form.addItem)">Add</button>
-		</div>
-	</div>
-
-
+			 -->
+			
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 	<script src="module.js"></script>  
 	<script src="controller.js"></script>
+	<script src="click-directive.js"></script>
+	<script src="task-directive.js"></script>
+	<script src="component.js"></script>
+	<script src="taskListComponent.js"></script>
 </body>
 </hmtl>
